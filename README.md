@@ -204,7 +204,7 @@ Updated: July 8, 2020
 ### misc
 
 - [opengl on remote machine](https://www.scm.com/doc/Installation/Remote_GUI.html)
-- useful Julia packages: ArgParse Glob Images FileIO StatsBase Shell UnicodePlots PyCall PyPlot Plots ImageFiltering ImageMagick Interpolations Revise OhMyREPL DataFrames ProgressMeter JLD2 Distances ImageTransformations JuMP HDF5 ImageInTerminal ImageView DataStructures JSON JuliaFormatter
+- useful Julia packages: ArgParse Glob Images FileIO StatsBase Shell UnicodePlots PyCall PyPlot Plots ImageFiltering ImageMagick Interpolations Revise OhMyREPL DataFrames ProgressMeter JLD2 Distances ImageTransformations JuMP HDF5 ImageInTerminal ImageView DataStructures JSON3 JuliaFormatter NNlib
 - free JuMP solvers: Cbc Clp COSMO CSDP ECOS GLPK Juniper OSQP ProxSDP SCS SDPA
 - good reference: http://www.linuxfromscratch.org/lfs/view/development/index.html and http://www.linuxfromscratch.org/blfs/view/svn/index.html and https://pkgs.org/
 - [CUDA arch and CUDA gencode list](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/)
@@ -217,6 +217,13 @@ Updated: July 8, 2020
   * get resolution `ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 input.mp4`
   * count frames `ffmpeg -i input.mp4 -map 0:v:0 -c copy -f null - 2>&1 | grep frame`
   * remove duplicated frames `ffmpeg -i input.mp4 -vf mpdecimate -vsync vfr out.mp4`
+- `rsync -avzh --exclude='*.jpg' --exclude='*.png' lizz@lizz-dev:data .`
+- cool rust tools:
+  * bottom https://github.com/ClementTsang/bottom
+  * ripgrep https://github.com/BurntSushi/ripgrep
+  * fd https://github.com/sharkdp/fd
+  * dust https://github.com/bootandy/dust
+  * zenith https://github.com/bvaisvil/zenith
 
 ### faq
 
